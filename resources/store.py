@@ -29,5 +29,5 @@ class Store(Resource):
         
 class StoreList(Resource):
     def get(self):
-        return "aa"
-        # return {'stores': [store.json for store in StoreModel.query.all()]}
+        # return "aa"
+        return {'stores': [store.json for store in StoreModel.query.all()]}
